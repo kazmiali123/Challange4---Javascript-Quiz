@@ -1,0 +1,102 @@
+
+
+body{
+font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.nav-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 5px;
+    background-color: bisque;
+    align-items: center;
+}
+
+#view-highscores:hover {
+    cursor:grab;
+    color:aqua;
+}
+
+.start-display{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding:5px;
+}
+
+.start-container{
+    justify-content: center;
+    text-align: center;
+    padding:5px;
+    width: 70%;
+}
+
+.quiz-display{
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding:5px;
+}
+
+.quiz-container{
+    justify-content: center;
+    text-align: left;
+    padding:5px;
+    width: 50%;
+}
+
+.end-display{
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding:5px;
+}
+
+.end-container{
+    justify-content: center;
+    text-align: left;
+    padding:5px;
+    width: 50%;
+}
+
+.end-user-input{
+    display:flex;
+    padding: 5px;
+}
+
+.end-row{
+    margin: 5px;
+}
+
+.score-display{
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding:5px;
+}
+
+.score-container{
+    justify-content: center;
+    text-align: left;
+    padding:5px;
+    width: 50%;
+}
+
+button{
+    background-color: blueviolet;
+    color: antiquewhite;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 15px;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 5px;
+}
+
+button:hover{
+    color:aqua;
+}

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="./assets/style.css" />
+    <title>JavaScript Quiz</title>
+  </head>
+
+  <body>
+    <main>
+      <!-- nav bar with 'View Highscores'-link to window, and Quiz Timer -->
+      <nav class="nav-bar">
+        <div id="view-highscores">View Highscores</div>
+        <div id="div-timer">Timer: <span id="timer"></span></div>
+      </nav>
+
+      <!-- start-screen element with a message and a 'Start' button -->
+      <section class="start-display">
+        <div class="start-container">
+          <h1 class="start-heading">Javascript Quiz</h1>
+          <p class="start-info">
+            Answer the multiple choice questions before the timer runs out and
+            incorrect answers will speed up the timer.
+          </p>
+          <button id="start-btn">Start</button>
+        </div>
+      </section>
+
+      <!-- quiz-screen element with a question paragraph and 'answer' buttons -->
+      <section class="quiz-display">
+        <div class="quiz-container">
+          <h2 class="quiz-heading"></h2>
+          <p class="quiz-info"></p>
+          <!-- answer button list -->
+          <ul class="container">
+            <li>
+              <button id="answerOneBtn" class="answer">wrong answer</button>
+            </li>
+            <li>
+              <button id="answerTwoBtn" class="answer">correct answer</button>
+            </li>
+            <li>
+              <button id="answerThreeBtn" class="answer">wrong answer</button>
+            </li>
+            <li>
+              <button id="answerFourBtn" class="answer">wrong answer</button>
+            </li>
+          </ul>
+          <hr />
+          <p id="previous-answer-feedback"></p>
+          <button id="next-btn">Next</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- end-screen element with final score message and 'enter-name' with 'submit' button  -->
+      <section class="end-display">
+        <div class="end-container">
+          <h2 class="end-heading">All Done!</h2>
+          <p class="end-info">
+            Your final score is: <span id="final-score"></span>
+          </p>
+          <!-- submit name for highscore list -->
+          <div class="end-row end-user-input">
+            <label for="player-name">Name: </label>
+            <input
+              type="text"
+              id="player-name"
+              class="end-row"
+              placeholder="Enter name here"
+              required
+            />
+            <button class="end-row" id="end-submit-btn">Submit</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- highscores-screen element with previous entries and buttons for 'go back' and 'clear highscores' -->
+      <section class="score-display">
+        <div class="score-container">
+          <h2 class="score-heading">Highscores</h2>
+          <!-- highscores list -->
+          <ol class="score-list">
+            <!-- [js] append highscore <li class="score"> to scoreListEl, to get the styling. -->
+          </ol>
+          <div class="end-score-options">
+            <button id="go-back-btn">Go Back</button>
+            <button id="clear-score-btn">Clear Highscores</button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="./assets/script.js"></script>
+  </body>
+</html>
